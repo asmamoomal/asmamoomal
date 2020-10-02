@@ -1,0 +1,266 @@
+
+/* CSS rest */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* navigation bar: logo and img */
+#logo{
+    margin: 2px 15px;
+}
+
+#logo img{
+    margin: 15px 15px;
+    height: 60px;
+}
+/* navigation bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+    color: white;
+    padding: 15px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+section{
+    padding: 50px;
+    /* background-color: red; */
+}
+
+#section-home{
+    height: 1200px;
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 800px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#home h1{
+    text-align: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    
+}
+
+/* Services Section */
+#services{
+    margin: 30px auto;
+    height: 300px;
+    text-align: center;
+}
+
+.h-primary{
+    font-size: 1rem;
+    font-family:'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 0.5rem;
+    font-family: 'Bree Serif', serif;
+} 
+
+
+.box{
+    display: inline-block;
+    border: 2px solid brown;
+    width: 400px;
+    max-width: 100%;
+    padding: 3px;
+    margin: 8px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+}
+
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+
+/* Client Section */
+
+#clients{
+    /* background-color: red; */
+    height: 330px;
+    text-align: center;
+}
+
+.clientitems{
+    padding: 20px;
+    display: inline-block;
+}
+
+
+#Client-section{
+    height: 400px;
+    background-image: url("../images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#client img{
+    height: 90px;
+    padding: 20px;
+}
+
+#contact-section{
+    height: 450px;
+    background-image: url("../images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    padding: 4px;
+    margin: 3px 5px;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: left;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family:'Bree Serif', serif;
+    justify-content: left;
+}
+
+#contact-box{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: auto 110px;
+    height: 40px;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 2px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3rem; 
+}
+.center{
+    text-align: center;
+}
+
+@media (max-width: 1400px){
+    #services{
+        height: 600px;
+    }
+
+    #clients{
+        height: 600px;
+    }
+
+    #Client-section{
+        height: 700px;
+    }
+}
+
+@media (max-width: 950px){
+    #services{
+        height: 900px;
+    }
+
+    #contact-section{
+        height: 550px;
+    }
+}
+
+@media (max-width: 800px){
+    #home{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 694px){
+    #home{
+        padding: 20px;
+    }
+
+    #clients{
+        height: 1200px;
+    }
+
+    #Client-section{
+        height: 1200px;
+    }
+
+    #contact-box{
+        padding: 20px 20px;
+        margin: auto 10px;
+        height: 40px;
+    }
+}

@@ -215,7 +215,52 @@ height: 40px;
 .center{
     text-align: center;
 }
-@media (max-width:400px){
+@media (max-width: 1400px){
+    #services{
+        height: 600px;
+    }
 
-    
+    #clients{
+        height: 600px;
+    }
+
+    #Client-section{
+        height: 700px;
+    }
+}
+
+@media (max-width: 950px){
+    #services{
+        height: 900px;
+    }
+
+    #contact-section{
+        height: 550px;
+    }
+}
+
+@media (max-width: 800px){
+    #home{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 694px){
+    #home{
+        padding: 20px;
+    }
+
+    #clients{
+        height: 1200px;
+    }
+
+    #Client-section{
+        height: 1200px;
+    }
+
+    #contact-box{
+        padding: 20px 20px;
+        margin: auto 10px;
+        height: 40px;
+    }
 }
